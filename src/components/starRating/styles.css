@@ -1,0 +1,30 @@
+/* Wrapper for the star rating */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between stars */
+  padding: 10px;
+  margin: 20px auto; /* Center on page */
+  background-color: #f4f4f4; /* Light gray background */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Default star style */
+.star {
+  color: #ccc; /* Gray color for unselected stars */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: color 0.2s ease; /* Smooth color transition */
+}
+
+/* Highlighted star style */
+.star-highlighted {
+  color: #ffc107; /* Yellow for selected or hovered stars */
+}
+
+/* Optional: Add a scaling effect when clicking */
+.star:active {
+  transform: scale(1.2); /* Slightly enlarge on click */
+  transition: transform 0.1s ease; /* Smooth scaling effect */
+}

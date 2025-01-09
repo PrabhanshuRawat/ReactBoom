@@ -1,0 +1,43 @@
+/* Container for the button */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: var(--background-color); /* Dynamic background color */
+    transition: background-color 0.3s ease-in-out; /* Smooth background transition */
+  }
+  
+  /* Button styles */
+  .toggle-button-white,
+  .toggle-button-black {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth color transition */
+  }
+  
+  /* White mode styles */
+  .toggle-button-white {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .toggle-button-white:hover {
+    background-color: #f0f0f0; /* Slightly darker white on hover */
+  }
+  
+  /* Black mode styles */
+  .toggle-button-black {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  }
+  
+  .toggle-button-black:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+  }

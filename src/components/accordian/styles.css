@@ -1,0 +1,73 @@
+/* General wrapper for the accordion */
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each accordion item */
+.item {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the item */
+.item:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of each accordion item */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Plus/Minus sign styling */
+.title span {
+  font-size: 20px;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Rotate the plus sign and change color when the item is expanded */
+.item.open .title span {
+  transform: rotate(45deg);
+  color: #000;
+}
+
+/* Style for the accordion answer text */
+h4 {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #555;
+  padding-left: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, color 0.3s ease;
+}
+
+/* Change text color to black when the item is expanded */
+.item.open h4 {
+  color: #000;
+  max-height: 200px; /* Adjust based on content size */
+}
+
+/* Style for "No Data Found" message */
+.no-data {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}

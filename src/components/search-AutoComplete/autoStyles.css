@@ -1,0 +1,67 @@
+/* Main container for the search autocomplete component */
+.search-autocomplete-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Input field styling */
+  .search-autocomplete-container input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-autocomplete-container input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Dropdown suggestion box */
+  .suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  /* Each suggestion item */
+  .suggestion-item {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* No suggestions message */
+  .no-suggestions {
+    padding: 10px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+  }
+  
+  /* Loading message */
+  .loading-message {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+  }
