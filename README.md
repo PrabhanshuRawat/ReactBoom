@@ -1,0 +1,2 @@
+# ReactBoom
+ ReactBoom  ReactBoom is a collection of simple React.js projects designed for practicing and enhancing React skills. These projects cover a variety of web application types, providing hands-on experience with React fundamentals and concepts. They serve as great learning tools for beginners and intermediate developers looking to improve their understanding of React.js and its core features.
